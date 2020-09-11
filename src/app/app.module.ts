@@ -6,10 +6,12 @@ import { AppComponent } from './app.component'
 import { HeaderComponent } from "./shared/header/header.component";
 import { RentalModule } from './rental/rental.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    
     
   ],
   imports: [
