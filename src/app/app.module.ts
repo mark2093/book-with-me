@@ -1,23 +1,26 @@
+import "@angular/compiler";
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import "@angular/compiler";
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component'
-import { HeaderComponent } from "./shared/header/header.component";
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './shared/header/header.component';
+
 import { RentalModule } from './rental/rental.module';
+import { AuthModule } from './auth/auth.module';
 
-
+// root module
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    
-    
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RentalModule
+    RentalModule,
+    FormsModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
